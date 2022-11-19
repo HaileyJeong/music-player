@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Dosis', sans-serif;
+}
+.container {
+  display: flex;
+  background-color: #F7F7F7;
+}
+.screen {
+  width: 365px;
+  height: 750px;
+  border-radius: 30px;
+  box-shadow: 0 10px 50px #D7DBF2;
+  background-color: white;
+  margin: 65px 20px;
+  padding: 15px 15px;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+
+/* album-img */
+.album-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.album-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px -5px #7D7D7D;
+  margin-bottom: 30px;
+}
+.album-img h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.album-img h5 {
+  font-size: 15px;
+  color: grey;
+  line-height: 3.10;
+}
+
+
+/* album-btn */
+.album-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 40px 30px;
+}
+.album-btn span {
+  padding: 12px 30px;
+  border-radius: 20px;
+  font-size: 13px;
+  box-shadow: 0 5px 20px #F5F5F5;
+}
+.album-btn span:first-child {
+  background-color: black;
+  color: white;
+}
+.album-btn span:last-child {
+  background-color: white;
+  color: grey;
+}
+
+/* album-list */
+.album-list {
+  display: flex;
+  width: 315px;
+  height: 65px;
+  margin: 15px 0;
+  position: relative;
+  padding-left: 10px;
+}
+.album-list:nth-child(2) {
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #F5F5F5;
+  width: 325px;
+  box-sizing: none;
+  padding: 0 10px 0;
+}
+.album-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  position: absolute;
+  top: 3px;
+}
+.album-list i {
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.3);
+}
+.album-text {
+  display: block;
+  width: 250px;
+  position: absolute;
+  left: 70px;
+}
+.album-text h5 {
+  font-size: 14px;
+  color: grey;
+  line-height: 2;
+}
+.album-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.album-list__now {
+  position: relative;
+}
+.album-list__now i {
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  color: #F2F2F2;
+}
+
+
+/* play-bar */
+.play-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 325px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #474747;
+  box-shadow: 1px 1px 5px -2px #474747;
+  box-sizing: none;
+  padding: 0 20px;
+  position: sticky;
+  margin-left: 5px;
+}
+.play-bar__text h5 {
+  color: #C7C7C7;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.play-bar__text h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.play-bar__btn {
+  display: flex;
+}
+.play-bar__btn i {
+  padding: 0 10px;
+  color: white;
+  align-items: center;
+}
+
+/* Screen2 */
+.play-img {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.play-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 10px 50px #BABABA;
+}
+
+/* play-text */
+.play-text {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.play-text h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 2;
+}
+.play-text h5 {
+  font-size: 18px;
+  color: grey;
+}
+
+/* play-progress */
+.play-progress {
+  margin: 10px 10px 70px;
+}
+.play-progress__time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.play-progress__bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+.play-progress__bar div:first-child {
+  width: 40%;
+  height: 5px;
+  background-color: #4D4D4D;
+  border-radius: 10px;
+}
+.play-progress__bar div:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4D4D4D;
+  position: absolute;
+  left: 120px;
+}
+.play-progress__bar div:last-child {
+  width: 60%;
+  height: 5px;
+  background-color: #E6E6E6;
+  border-radius: 10px;
+}
+
+/* play-btn */
+.play-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.play-btn__circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4D4D4D;
+  position: relative;
+}
+.fa-play {
+  color: white;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+.fa-sync-alt,
+.fa-random {
+  color: #E6E6E6;
+}
